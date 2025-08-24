@@ -941,3 +941,38 @@ function downloadResume() {
             alert('Resume file not found. Please contact me directly.');
         });
 }
+
+
+
+        let progress = 0;
+        const progressBar = document.getElementById('progressBar');
+        const percentage = document.getElementById('percentage');
+        const loadingScreen = document.getElementById('loadingScreen');
+        const mainContent = document.getElementById('mainContent');
+
+        // Simulate loading progress
+        const loadingInterval = setInterval(() => {
+            progress += Math.random() * 15 + 5; // Random increment between 5-20%
+            
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(loadingInterval);
+                
+                // Complete loading after a short delay
+                setTimeout(() => {
+                    loadingScreen.classList.add('hidden');
+                    mainContent.classList.add('visible');
+                }, 500);
+            }
+            
+            progressBar.style.width = progress + '%';
+            percentage.textContent = Math.floor(progress) + '%';
+        }, 200); // Update every 200ms
+
+        // Fallback: Hide loading screen after 4 seconds regardless
+        setTimeout(() => {
+            if (!loadingScreen.classList.contains('hidden')) {
+                loadingScreen.classList.add('hidden');
+                mainContent.classList.add('visible');
+            }
+        }, 4000);
