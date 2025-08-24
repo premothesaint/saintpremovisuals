@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css?v=1.1">
+    <link rel="stylesheet" href="assets/premo-navbar.css">
+    <style>
+      @font-face {
+        font-family: 'Stretch Pro';
+        src: url('assets/fonts/StretchPro.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      .section-7-quote {
+        margin-top: 60px;
+        text-align: center;
+      }
+      .section-7-quote span {
+        font-family: 'Stretch Pro', 'StretchPro', sans-serif;
+        font-size: 2.5rem;
+        letter-spacing: 0.1em;
+        display: inline-block;
+      }
+    </style>
+</head>
+<body>
+    <nav class="premo-navbar">
+        <div class="nav-left">
+            <span class="nav-local">LOCAL/</span>
+            <span class="nav-clock">00:20:19</span>
+        </div>
+        <div class="nav-center">
+            <img src="assets/images/logo/nav-bar-logo.png" alt="Logo" class="nav-bar-logo" style="cursor: pointer;">
+        </div>
+        <div class="nav-right">
+             <button class="nav-contact" onclick="showCard()">CONTACT NOW</button>
+        </div>
+    </nav>
+        <div class="card-overlay" id="cardOverlay" onclick="hideCard(event)">
+        <div class="calling-card" onclick="event.stopPropagation()">
+        
+            
+            <div class="card-header">
+                <div>
+                    <div class="card-title">GUILLERMO, MARK JOHN I.</div>
+                    <div class="card-subtitle">SAINTPREMO VISUALS™</div>
+                </div>
+                <div class="logo">
+                    <img src="assets/images/logo/MONO LOGO2.png" alt="Card Logo" class="card-logo">
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <span>markjohnguillermo47@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <span>+63 955 680 6336</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <span>www.saintpremovisuals.com (Under Development)</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <span>Pangasinan, Philippines</span>
+                </div>
+            </div>
+
+            <div class="chip"></div>
+            <div class="holographic-stripe"></div>
+        </div>
+    </div>
+    <section class="section-1">
+        <img src="assets/images/section-1/premo.png" alt="Premo" class="section-1-img">
+        <div class="section-1-bottom">
+            <div class="info-block">
+                <img src="assets/images/section-1/location.png" alt="Location" class="info-icon" />
+                <div class="info-title">PANGASINAN,</div>
+                <div class="info-sub">PHILIPPINES</div>
+            </div>
+            <div class="info-block">
+                <img src="assets/images/section-1/globe.png" alt="Globe" class="info-icon" />
+                <div class="info-title">AVAILABLE ALL AROUND</div>
+                <div class="info-sub">WORLDWIDE</div>
+            </div>
+            <div class="info-block">
+                <img src="assets/images/section-1/cards.png" alt="Verified" class="info-icon" />
+                <div class="info-title">JACK OF 2 TRADES</div>
+                <div class="info-sub">+ SYSTEM DEV & DESIGNER</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <img src="assets/images/section-2/premo.png" alt="Section 2 Premo" class="section-2-img">
+    </section>
+
+    <section class="section-3">
+        <div class="section-3-grid">
+            <div class="section-3-col section-3-col-left">
+                <span class="section-3-num">01</span>
+            </div>
+            <div class="section-3-col section-3-col-center">
+                <span class="section-3-approach">//INTRODUCTION</span>
+            </div>
+            <div class="section-3-col section-3-col-right">
+                <span class="section-3-phases">THREE PHASES</span>
+            </div>
+        </div>
+        <h1 class="section-3-main-title">I'M MJ, (SAINTPREMO VISUALS)<br>BASED IN PH.</h1>
+        <p class="section-3-subtitle">I solve technical challenges by applying responsive design principles<br>to create efficient and visually consistent solutions.</p>
+        <div class="section-3-steps">
+            <span class="section-3-step">01</span>
+            <span class="section-3-step">02</span>
+            <span class="section-3-step">03</span>
+        </div>
+        <div class="section-3-phases-grid">
+            <div class="phase-card">
+                <div class="phase-icons">
+                    <svg class="icon" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                    </svg>
+                    <svg class="icon" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="currentColor" d="M12,2A7,7 0 0,1 19,9C19,11.38 17.81,13.47 16,14.74V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V14.74C6.19,13.47 5,11.38 5,9A7,7 0 0,1 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21M12,4A5,5 0 0,0 7,9C7,11.05 8.23,12.81 10,13.58V16H14V13.58C15.77,12.81 17,11.05 17,9A5,5 0 0,0 12,4Z"/>
+                    </svg>
+                    <svg class="icon" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="currentColor" d="M22,21H2V3H4V19H6V10H10V19H12V6H16V19H18V14H22V21Z"/>
+                    </svg>
+                </div>
+                <h3>DISCOVER & ANALYZE</h3>
+                <p>Explore user needs and assess project goals to guide design and development.</p>
+            </div>
+            <div class="phase-card">
+                <div class="phase-icons">
+                    <svg class="icon" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="currentColor" d="M20.71,4.04C21.1,3.65 21.1,3 20.71,2.63L18.37,0.29C18,-0.1 17.35,-0.1 16.96,0.29L15,2.25L18.75,6M17.75,7L14,3.25L4,13.25V17H7.75L17.75,7Z"/>
+                    </svg>
+                    <svg class="icon" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="currentColor" d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z"/>
+                    </svg>
+                    <svg class="icon" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="currentColor" d="M12,18.54L19.37,12.8L21,14.07L12,21.07L3,14.07L4.62,12.81L12,18.54M12,16L3,9L12,2L21,9L12,16M12,4.53L6.26,9L12,13.47L17.74,9L12,4.53Z"/>
+                    </svg>
+                </div>
+                <h3>DESIGN & DEVELOP</h3>
+                <p>Craft visual and system solutions that bring ideas to life through code and creativity.</p>
+            </div>
+            <div class="phase-card">
+                <div class="phase-icons">
+                    <svg class="icon" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="currentColor" d="M13.13 22.19L11.5 18.36C13.07 17.78 14.54 17 15.9 16.09L13.13 22.19M5.64 12.5L1.81 10.87L7.91 8.1C7 9.46 6.22 10.93 5.64 12.5M21.61 2.39C21.61 2.39 16.66 .269 11 5.93C8.81 8.12 7.5 10.53 6.65 12.64C6.37 13.39 6.56 14.21 7.11 14.77L9.24 16.89C9.79 17.45 10.61 17.63 11.36 17.35C13.5 16.53 15.88 15.19 18.07 13C23.73 7.34 21.61 2.39 21.61 2.39M14.54 9.46C13.76 8.68 13.76 7.41 14.54 6.63S16.59 5.85 17.37 6.63C18.14 7.41 18.15 8.68 17.37 9.46C16.59 10.24 15.32 10.24 14.54 9.46M8.88 16.53L7.47 15.12L8.88 16.53M6.24 22L9.88 18.36C9.54 18.27 9.21 18.12 8.91 17.91L4.83 22H6.24M2 22H3.41L8.18 17.24L6.76 15.83L2 20.59V22M2 19.17L6.09 15.09C5.88 14.79 5.73 14.47 5.64 14.12L2 17.76V19.17Z"/>
+                    </svg>
+                    <svg class="icon" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="currentColor" d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z"/>
+                    </svg>
+                    <svg class="icon" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="currentColor" d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                    </svg>
+                </div>
+                <h3>DEPLOY & OPTIMIZE</h3>
+                <p>Implement solutions effectively and refine performance through ongoing monitoring.</p>
+            </div>
+        </div>
+
+       <!-- <div class="tech-stack-container">
+            <h2 class="tech-stack-title">TECH STACKS</h2>
+            <div class="tech-stack-layer">
+                <img src="assets/images/section-3/tech-stacks/1.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/2.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/3.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/4.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/5.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/6.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/7.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/8.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/9.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/10.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/11.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+            </div>
+            <div class="tech-stack-layer">
+                <img src="assets/images/section-3/tech-stacks/12.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/13.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/14.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/15.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/16.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/17.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/18.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+            </div>
+            <div class="tech-stack-layer">
+                <img src="assets/images/section-3/tech-stacks/19.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/20.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/21.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+            </div>
+        </div>
+-->
+        <div class="brand-slider">
+            <div class="slider-track">
+                <div class="slide"><img src="assets/images/section-3/brands/1.png" alt="Brand 1" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/2.png" alt="Brand 2" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/3.png" alt="Brand 3" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/4.png" alt="Brand 4" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/5.png" alt="Brand 5" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/6.png" alt="Brand 6" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/7.png" alt="Brand 7" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/8.png" alt="Brand 8" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/9.png" alt="Brand 9" loading="lazy" decoding="async"></div>
+                <!-- Duplicate all slides for seamless loop -->
+                <div class="slide"><img src="assets/images/section-3/brands/1.png" alt="Brand 1" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/2.png" alt="Brand 2" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/3.png" alt="Brand 3" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/4.png" alt="Brand 4" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/5.png" alt="Brand 5" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/6.png" alt="Brand 6" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/7.png" alt="Brand 7" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/8.png" alt="Brand 8" loading="lazy" decoding="async"></div>
+                <div class="slide"><img src="assets/images/section-3/brands/9.png" alt="Brand 9" loading="lazy" decoding="async"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="section-4">
+        <div class="section-3-grid">
+            <div class="section-3-col section-3-col-left">
+                <span class="section-3-num">02</span>
+            </div>
+            <div class="section-3-col section-3-col-center">
+                <span class="section-3-approach">//PORTFOLIO</span>
+            </div>
+            <div class="section-3-col section-3-col-right">
+                <span class="section-3-phases">2025</span>
+            </div>
+        </div>
+        <div class="section-4-header">
+            <h1 class="section-4-main-title">LATEST<br>PROJECTS</h1>
+            <p class="section-4-subtitle">
+               Creativity fuels my digital craft designing<br>
+                with vision and coding with purpose.
+            </p>
+        </div>
+        <div class="section-4-carousels-wrapper" style="display: flex; flex-direction: column; align-items: center; position: relative;">
+            <div class="section-4-carousels">
+                <div class="carousel-card left">
+                    <div class="carousel-image-wrapper left">
+                        <img src="assets/images/section-4/klly/1.jpg" alt="KLly 1" class="carousel-image active">
+                        <img src="assets/images/section-4/klly/2.jpg" alt="KLly 2" class="carousel-image">
+                    </div>
+                    <div class="carousel-dots carousel-dots-klly">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="carousel-title">KELLY</div>
+                        <div class="carousel-subtitle">ILLUSTRATION ART</div>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow-klly" aria-label="Next">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+                </div>
+                <div class="carousel-card right">
+                    <div class="carousel-image-wrapper right">
+                        <img src="assets/images/section-4/ibl-mesh-shorts/main.jpg" alt="IBL Main" class="carousel-image active">
+                        <img src="assets/images/section-4/ibl-mesh-shorts/1.jpg" alt="IBL 1" class="carousel-image">
+                        <img src="assets/images/section-4/ibl-mesh-shorts/2.jpg" alt="IBL 2" class="carousel-image">
+                        <img src="assets/images/section-4/ibl-mesh-shorts/3.jpg" alt="IBL 3" class="carousel-image">
+                        <img src="assets/images/section-4/ibl-mesh-shorts/4.jpg" alt="IBL 4" class="carousel-image">
+                    </div>
+                    <div class="carousel-dots carousel-dots-ibl">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="carousel-title">SMARTPASS</div>
+                        <div class="carousel-subtitle">Capstone Project</div>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow-ibl" aria-label="Next">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-card miaa">
+                <div class="carousel-image-wrapper miaa">
+                    <img src="assets/images/section-4/miaa/2.jpg" alt="MIAA 1" class="carousel-image active">
+                    <img src="assets/images/section-4/miaa/1.jpg" alt="MIAA 2" class="carousel-image">
+                    <img src="assets/images/section-4/miaa/3.jpg" alt="MIAA 3" class="carousel-image">
+                </div>
+                <div class="carousel-dots carousel-dots-miaa">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+                <div class="carousel-caption">
+                    <div class="carousel-title">MIAA</div>
+                    <div class="carousel-subtitle">SYSTEMS AND TOOLS</div>
+                </div>
+                <button class="carousel-arrow carousel-arrow-miaa" aria-label="Next">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+            </div>
+            <div class="section-4-carousels" style="margin-top: 100px;">
+                <div class="carousel-card agno">
+                    <div class="carousel-image-wrapper agno">
+                        <img src="assets/images/section-4/agno-river-unit/1.jpg" alt="Agno 1" class="carousel-image active">
+                        <img src="assets/images/section-4/agno-river-unit/2.jpg" alt="Agno 2" class="carousel-image">
+                        <img src="assets/images/section-4/agno-river-unit/3.jpg" alt="Agno 3" class="carousel-image">
+                        <img src="assets/images/section-4/agno-river-unit/4.jpg" alt="Agno 4" class="carousel-image">
+                        <img src="assets/images/section-4/agno-river-unit/5.jpg" alt="Agno 5" class="carousel-image">
+                    </div>
+                    <div class="carousel-dots carousel-dots-agno">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="carousel-title">AGNO RIVER UNIT</div>
+                        <div class="carousel-subtitle">VISUAL CONTENTS</div>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow-agno" aria-label="Next">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+                </div>
+                <div class="carousel-card frappey">
+                    <div class="carousel-image-wrapper frappey">
+                        <img src="assets/images/section-4/frappey-cafe/event.jpg" alt="Frappey Event" class="carousel-image active">
+                        <img src="assets/images/section-4/frappey-cafe/holiday.jpg" alt="Frappey Holiday" class="carousel-image">
+                        <img src="assets/images/section-4/frappey-cafe/menus.jpg" alt="Frappey Menus" class="carousel-image">
+                        <img src="assets/images/section-4/frappey-cafe/seasons.jpg" alt="Frappey Seasons" class="carousel-image">
+                        <img src="assets/images/section-4/frappey-cafe/social-media.jpg" alt="Frappey Social Media" class="carousel-image">
+                    </div>
+                    <div class="carousel-dots carousel-dots-frappey">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="carousel-title">FRAPPEY CAFE</div>
+                        <div class="carousel-subtitle">SOCIAL GRAPHICS</div>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow-frappey" aria-label="Next">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section-5">
+        <div class="section-3-grid">
+            <div class="section-3-col section-3-col-left">
+                <span class="section-3-num">03</span>
+            </div>
+            <div class="section-3-col section-3-col-center">
+                <span class="section-3-approach">//WHO AM I</span>
+            </div>
+            <div class="section-3-col section-3-col-right">
+                <span class="section-3-phases">PREMO444</span>
+            </div>
+        </div>
+        <h1 class="section-5-title">MORE ABOUT<br>PREMO</h1>
+        <div class="section-5-anim-image-container">
+          <img src="assets/images/section-5/me_2.jpg" alt="Premo 2" class="section-5-anim-image section-5-anim-image-left" />
+          <img src="assets/images/section-5/me_3.jpg" alt="Premo 3" class="section-5-anim-image section-5-anim-image-right" />
+          <img src="assets/images/section-5/me.jpg" alt="Premo" class="section-5-anim-image section-5-anim-image-main" />
+          <div class="section-5-anim-reveal"></div>
+          <div class="section-5-anim-glow"></div>
+        </div>
+        <div class="section-5-bio-container">
+            <p class="section-5-bio-text">
+                I'm Mark John Ignacio Guillermo, also known as PREMO, a passionate designer and system developer and the founder of SAINTPREMO VISUALS™. I specialize in blending creativity and technology to build impactful brand identities, sleek visuals, and functional digital systems. 
+            </p>
+            <button class="section-5-download-resume" onclick="downloadResume()">DOWNLOAD RESUME</button>
+        </div>
+    </section>
+
+    <section class="section-6" id="section-6">
+        <div class="section-3-grid">
+            <div class="section-3-col section-3-col-left">
+                <span class="section-3-num">04</span>
+            </div>
+            <div class="section-3-col section-3-col-center">
+                <span class="section-3-approach">//SERVICES</span>
+            </div>
+            <div class="section-3-col section-3-col-right">
+                <span class="section-3-phases">EXPERTISE</span>
+            </div>
+        </div>
+        <div class="section-4-header">
+            <h1 class="section-4-main-title">PRO<br>SERVICES</h1>
+            <p class="section-4-subtitle">
+                Discover tailored services that amplify your brand’s<br>identity, impact, and growth.         
+            </p>
+        </div>
+        <!-- Service Dropdown List Start -->
+        <div class="services-dropdown-list" style="margin-top: 100px; margin-left:auto; margin-right: 30px; width:max-content;">
+          <div class="service-dropdown-card">
+            <button class="service-dropdown-toggle" aria-expanded="false">
+              <span class="service-title">●○○○○ &nbsp WEB & SYSTEM DEVELOPMENT</span>
+              <span class="service-chevron"><svg width="18" height="18" viewBox="0 0 18 18" style="display:inline;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><polyline points="4,7 9,12 14,7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="service-dropdown-content">
+              <div class="service-desc">Designing and developing responsive websites, custom systems, and digital solutions tailored to business needs.</div>
+            </div>
+          </div>
+          <div class="service-dropdown-card">
+            <button class="service-dropdown-toggle" aria-expanded="false">
+              <span class="service-title">●●○○○ &nbsp UX/UI DESIGN</span>
+              <span class="service-chevron"><svg width="18" height="18" viewBox="0 0 18 18" style="display:inline;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><polyline points="4,7 9,12 14,7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="service-dropdown-content">
+              <div class="service-desc">Crafting intuitive user experiences and clean interface designs that enhance usability across all platforms.</div>
+            </div>
+          </div>
+          <div class="service-dropdown-card">
+            <button class="service-dropdown-toggle" aria-expanded="false">
+              <span class="service-title">●●●○○ &nbsp BRAND IDENTITY</span>
+              <span class="service-chevron"><svg width="18" height="18" viewBox="0 0 18 18" style="display:inline;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><polyline points="4,7 9,12 14,7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="service-dropdown-content">
+              <div class="service-desc">Building cohesive brand visuals from logos to style guides that reflect your values and connect with your audience.</div>
+            </div>
+          </div>
+          <div class="service-dropdown-card">
+            <button class="service-dropdown-toggle" aria-expanded="false">
+              <span class="service-title">●●●●○ &nbsp SOCIAL MEDIA GRAPHICS</span>
+              <span class="service-chevron"><svg width="18" height="18" viewBox="0 0 18 18" style="display:inline;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><polyline points="4,7 9,12 14,7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="service-dropdown-content">
+              <div class="service-desc">Creating promotional materials and social media assets that visually communicate your message and attract engagement.</div>
+            </div>
+          </div>
+          <div class="service-dropdown-card">
+            <button class="service-dropdown-toggle" aria-expanded="false">
+              <span class="service-title">●●●●● &nbsp CREATIVE DIRECTION</span>
+              <span class="service-chevron"><svg width="18" height="18" viewBox="0 0 18 18" style="display:inline;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><polyline points="4,7 9,12 14,7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+            <div class="service-dropdown-content">
+              <div class="service-desc">Providing strategic oversight on design projects to maintain a consistent, impactful visual brand across all channels.</div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+        
+    <section class="section-7" id="section-7">
+            <div class="section-3-grid">
+                <div class="section-3-col section-3-col-left">
+                    <span class="section-3-num">05</span>
+                </div>
+                <div class="section-3-col section-3-col-center">
+                    <span class="section-3-approach">//VOICE WITHIN</span>
+                </div>
+                <div class="section-3-col section-3-col-right">
+                    <span class="section-3-phases">SINCE 2022</span>
+                </div>
+            </div>
+            <h1 class="section-7-main-title">IN PREMO, WE TRUST</h1>
+            <div class="section-7-outline-grid">
+              <div class="section-7-outline-box" onclick="showOutlineBox(1)"><img src="assets/images/section-7/1.png" alt="Box 1" class="section-7-outline-img"><div class="section-7-outline-title">INTRO</div></div>
+              <div class="section-7-outline-box" onclick="showOutlineBox(2)"><img src="assets/images/section-7/2.png" alt="Box 2" class="section-7-outline-img"><div class="section-7-outline-title">EYE</div></div>
+              <div class="section-7-outline-box" onclick="showOutlineBox(3)"><img src="assets/images/section-7/3.png" alt="Box 3" class="section-7-outline-img"><div class="section-7-outline-title">4-POINTED STAR</div></div>
+              <div class="section-7-outline-box" onclick="showOutlineBox(4)"><img src="assets/images/section-7/4.png" alt="Box 4" class="section-7-outline-img"><div class="section-7-outline-title">OVERALL</div></div>
+            </div>
+            <div id="section-7-outline-details" class="section-7-outline-details">
+              <p class="section-7-outline-detail" data-box="1" style="display:none;">LOGO BREAKDOWN 101</p>
+              <p class="section-7-outline-detail" data-box="2" style="display:none;">The eye symbolizes vision, insight, and perception. As a designer, it means seeing beyond the ordinary; as a developer, it reflects foresight, intuitive solutions, and understanding the logic behind ideas.</p>
+              <p class="section-7-outline-detail" data-box="3" style="display:none;">The star embodies core creative energy and inspiration that drive Saintpremo Visuals. As a designer, it guides clients toward innovative solutions, while as a developer, it represents building precise, functional, and impactful results. Its four points stand for Creativity, Precision, Innovation, and Execution.</p>
+              <p class="section-7-outline-detail" data-box="4" style="display:none;">The combination of the Eye and Four-Pointed Star embodies a visionary and inspired perspective. It shows that Saintpremo Visuals goes beyond creating designs — crafting star-quality solutions that are both insightful and innovative.</p>
+            </div>
+    </section>
+
+    <section class="section-8">
+        <div class="section-3-grid">
+            <div class="section-3-col section-3-col-left">
+                <span class="section-3-num">06</span>
+            </div>
+            <div class="section-3-col section-3-col-center">
+                <span class="section-3-approach">//EXPERIENCE</span>
+            </div>
+            <div class="section-3-col section-3-col-right">
+                <span class="section-3-phases">2O22-PRESENT</span>
+            </div>
+        </div>
+        
+        <div class="section-8-content">
+            <h1 class="section-8-sticky-title">
+                <span class="left-text">EXPERIENCE</span>
+            </h1>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-date">[2025-2025]</div>
+                    <div class="experience-details">
+                        <h3>MIAA (Manila International Airport Authority)</h3>
+                        <p>Junior Programmer & Tech Support (Intern)</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">[2020-Present]</div>
+                    <div class="experience-details">
+                        <h3>SAINTPREMO VISUALS</h3>
+                        <p>Creative Director & System Developer</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">[2024-NOW]</div>
+                    <div class="experience-details">
+                        <h3>FRAPPEY CAFÉ</h3>
+                        <p>Creative Director, Graphic Designer & Artist</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">[2024-NOW]</div>
+                    <div class="experience-details">
+                        <h3>AGNO RIVER UNIT</h3>
+                        <p>Graphic Artist & Designer</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">[2022-2023]</div>
+                    <div class="experience-details">
+                        <h3>RONNIEL CENTINO STUDIOS</h3>
+                        <p>Photo Editor & Graphic Artist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-9">
+
+        <div class="section-3-grid">
+            <div class="section-3-col section-3-col-left">
+                <span class="section-3-num">07</span>
+            </div>
+            <div class="section-3-col section-3-col-center">
+                <span class="section-3-approach">//UTILITIES</span>
+            </div>
+            <div class="section-3-col section-3-col-right">
+                <span class="section-3-phases">TOOLS</span>
+            </div>
+        </div>  
+
+        <div class="tech-stack-container">
+            <h2 class="tech-stack-title">TECH STACKS</h2>
+            <div class="tech-stack-layer">
+                <img src="assets/images/section-3/tech-stacks/1.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/2.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/3.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/4.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/5.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/6.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/7.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/8.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/9.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/10.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/11.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+            </div>
+            <div class="tech-stack-layer">
+                <img src="assets/images/section-3/tech-stacks/12.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/13.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/14.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/15.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/16.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/17.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/18.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+            </div>
+            <div class="tech-stack-layer">
+                <img src="assets/images/section-3/tech-stacks/19.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/20.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+                <img src="assets/images/section-3/tech-stacks/21.png" alt="Tech Stack Image" loading="lazy" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-10">
+        <div class="section-3-grid">
+            <div class="section-3-col section-3-col-left">
+                <span class="section-3-num">08</span>
+            </div>
+            <div class="section-3-col section-3-col-center">
+                <span class="section-3-approach">//CERTIFICATES</span>
+            </div>
+            <div class="section-3-col section-3-col-right">
+                <span class="section-3-phases">ACCOMPLISHMENTS</span>
+            </div>
+        </div>
+
+        <div class="section-10-header">
+            <h1 class="section-10-main-title">CERTIFICATES</h1>
+        </div>
+                <div class="certificates-gallery">
+            <div class="certificate-item">
+                <img src="assets/images/section-10/2.jpg" alt="Certificate 1" class="certificate-image">
+                <div class="certificate-info">
+                    <h3 class="certificate-title">Responsive Web Design</h3>
+                    <p class="certificate-issuer">freeCodeCamp</p>
+         
+                </div>
+            </div>
+
+            <div class="certificate-item">
+                <img src="assets/images/section-10/1.jpg" alt="Certificate 2" class="certificate-image">
+                <div class="certificate-info">
+                    <h3 class="certificate-title">JavaScript Algorithms and Data Structures</h3>
+                    <p class="certificate-issuer">freeCodeCamp</p>
+   
+                </div>
+            </div>
+
+            <div class="certificate-item">
+                <img src="assets/images/section-10/3.jpg" alt="Certificate 3" class="certificate-image">
+                <div class="certificate-info">
+                    <h3 class="certificate-title">Full Stack Development 101</h3>
+                    <p class="certificate-issuer">simplilearn|SkillUp</p>
+
+                </div>
+            </div>
+
+            <div class="certificate-item">
+                <img src="assets/images/section-10/6.jpg" alt="Certificate 4" class="certificate-image">
+                <div class="certificate-info">
+                    <h3 class="certificate-title">Cybersecurity 101</h3>
+                    <p class="certificate-issuer">Cyber 101</p>
+
+                </div>
+            </div>
+
+            <div class="certificate-item">
+                <img src="assets/images/section-10/8.jpg" alt="Certificate 5" class="certificate-image">
+                <div class="certificate-info">
+                    <h3 class="certificate-title">National Certificate II</h3>
+                    <p class="certificate-issuer">TESDA</p>
+
+                </div>
+            </div>
+
+            <div class="certificate-item">
+                <img src="assets/images/section-10/0.jpg" alt="Certificate 6" class="certificate-image">
+                <div class="certificate-info">
+                    <h3 class="certificate-title">Internship Certification</h3>
+                    <p class="certificate-issuer">Manila International Airport Authority</p>
+
+                </div>
+            </div>
+
+            <div class="certificate-item">
+                <img src="assets/images/section-10/4.jpg" alt="Certificate 7" class="certificate-image">
+                <div class="certificate-info">
+                    <h3 class="certificate-title">An introduction to web applications architecture</h3>
+                    <p class="certificate-issuer">OpenLearn</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-11">
+        <div class="section-11-header">
+            <h1 class="section-11-main-title">LET'S WORK <BR> TOGETHER</h1>
+        </div>
+            <div class="main-container">
+        
+        <div class="content-grid">
+            <div class="left-text">
+                <div class="location-label">
+                    Based in Pangasinan,<br>
+                    Philippines
+                </div>
+            </div>
+            
+            <div class="profile-container">
+                <div class="profile-image">
+                        <img src="assets/images/section-11/premo444.jpg"/>
+                </div>
+            </div>
+            
+            <div class="right-text">
+                <div class="role-label">
+                    JACK OF 2 TRADES<br>
+                    + SYSTEM DEV & DESIGNER
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-description">
+            Based in the PH, I am a passionate system developer and graphic artist with a strong focus on creating innovative solutions. I thrive on combining creativity and technology to develop efficient systems and visually compelling designs that effectively meet client needs.
+        </div>
+        
+    <div class="social-container">
+        <a href="https://www.instagram.com/saint_adobo/" class="social-link instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+        </a>
+
+        <a href="https://www.facebook.com/SAINTPREMO/" class="social-link facebook" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mark-john-guillermo-2547482b1/" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+        </a>
+    </div>
+    </div>
+    </section>
+
+    <footer class="footer">       
+        <div class="footer-content">
+            <img src="assets/images/section-1/premo.png" alt="Your Brand" class="main-logo">
+            <div class="footer-bottom">
+                <div class="copyright">©2025 DEVELOPED BY M. GUILLERMO</div>
+                <a href="#" class="back-to-top">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="image-modal">
+      <div class="image-modal-overlay"></div>
+      <div class="image-modal-content">
+        <button class="image-modal-arrow image-modal-arrow-left" aria-label="Previous" style="display:none;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <img src="" alt="View" class="image-modal-img" />
+        <button class="image-modal-arrow image-modal-arrow-right" aria-label="Next" style="display:none;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
